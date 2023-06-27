@@ -155,7 +155,7 @@ const Nav = () => {
           <li><NavLink to='/contact' className='navbar-link'>Contact</NavLink></li>
 
           <li>
-            <NavLink to='/cart' className='navbar-link  cart-trolley--link'>
+            <NavLink to='/cart' className='navbar-link cart-trolley--link'>
               <FiShoppingCart className='cart-trolley' />
               <span className='cart-total--item'> 10 </span>
             </NavLink>
