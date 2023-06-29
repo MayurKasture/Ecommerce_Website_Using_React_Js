@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SingleProduct = () => {
   // return <Wrapper></Wrapper>;
-  return <h1>single page</h1>
+  return <Wrapper>Single Product</Wrapper>
 }
 const Wrapper = styled.section`
   .container {
