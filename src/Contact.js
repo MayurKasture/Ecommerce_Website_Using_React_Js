@@ -26,6 +26,7 @@ const Contact = () => {
               border: 1px solid ${({ theme }) => theme.colors.btn};
               color: ${({ theme }) => theme.colors.btn};
               transform: scale(0.9);
+              color: $;
             }
           }
         }
@@ -33,8 +34,58 @@ const Contact = () => {
     }
   `;
 
-  // return <Wrapper></Wrapper>;
-  return <h1>Contact</h1>
+  return (
+    <Wrapper>
+      <h2 className="common-heading">Contact page</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1029.6473414513923!2d73.7475689417456!3d19.983655256594737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDU5JzAxLjciTiA3M8KwNDQnNTIuNCJF!5e0!3m2!1sen!2sin!4v1687948506743!5m2!1sen!2sin"
+        width="90%"
+        height="400"
+        style={{ border: "0" }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google-map"
+      ></iframe>
+
+      <div className="container">
+        <div className="contact-form">
+          <form
+            action="https://formspree.io/f/mjvqboqr"
+            method="POST"
+            className="contact-inputs"
+          >
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              required
+              autoComplete="off"
+            />
+
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              autoComplete="off"
+              required
+            />
+
+            <textarea
+              name="Message"
+              cols="30"
+              rows="10"
+              required
+              autoComplete="off"
+              placeholder="Enter you message"
+            ></textarea>
+
+            <input type="submit" value="send" />
+          </form>
+        </div>
+      </div>
+    </Wrapper>
+  );
 };
 
 export default Contact;
