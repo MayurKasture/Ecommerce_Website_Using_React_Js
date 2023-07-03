@@ -4,7 +4,9 @@ import Services from "./components/Services";
 import Trusted from "./components/Trusted";
 
 const Home = () => {
-  const data = { name: "fork store" };
+  const data = {
+    name: "thapa store",
+  };
 
   return (
     <>
