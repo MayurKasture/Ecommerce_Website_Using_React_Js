@@ -12,22 +12,22 @@ const initialState = {
   products: [],
   featureProducts: [],
   isSingleLoading: false,
-  SingleProduct: {},
+  singleProduct: {},
 };
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   // My 1st API call for - all products with there details.
+
   const getProducts = async (url) => {
     dispatch({ type: "SET_LOADING" });
-
     try {
       const res = await axios.get(url);
       const products = await res.data;
       dispatch({ type: "SET_API_DATA", payload: products });
     } catch (error) {
-      dispatch({ type: "SET_API_ERROR" });
+      dispatch({ type: "API_ERROR" });
     }
   };
 
@@ -35,7 +35,6 @@ const AppProvider = ({ children }) => {
 
   const getSingleProduct = async (url) => {
     dispatch({ type: "SET_SINGLE_LOADING" });
-
     try {
       const res = await axios.get(url);
       const singleProduct = await res.data;
@@ -56,7 +55,7 @@ const AppProvider = ({ children }) => {
   );
 };
 
-// custom hooks.
+// custom hooks
 const useProductContext = () => {
   return useContext(AppContext);
 };
