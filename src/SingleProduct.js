@@ -98,7 +98,6 @@ const SingleProduct = () => {
                 Brand :<span> {company} </span>
               </p>
             </div>
-            
           </div>
         </div>
       </Container>

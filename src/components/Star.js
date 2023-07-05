@@ -29,7 +29,6 @@ const Star = ({ stars, reviews }) => {
 };
 
 const Wrapper = styled.section`
-
   .icon-style {
     display: flex;
     justify-content: center;
@@ -47,7 +46,7 @@ const Wrapper = styled.section`
 
     p {
       margin: 0;
-      padding-left: 1.2rem
+      padding-left: 1.2rem;
     }
   }
 `;
