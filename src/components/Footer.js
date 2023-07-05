@@ -45,14 +45,14 @@ const Footer = () => {
               <div className="footer-social--icons">
                 <div>
                   {/* <a href="" target="_blank" rel="noreferrer"> */}
-                    <FaDiscord className="icons" />
+                  <FaDiscord className="icons" />
                   {/* </a> */}
                 </div>
                 <div>
-                    <FaInstagram className="icons" />
+                  <FaInstagram className="icons" />
                 </div>
                 <div>
-                    <FaYoutube className="icons" />
+                  <FaYoutube className="icons" />
                 </div>
               </div>
             </div>
