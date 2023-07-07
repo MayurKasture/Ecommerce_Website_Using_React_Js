@@ -21,6 +21,21 @@ export const FilterContextProvider = ({ children }) => {
     return dispatch({ type: "SET_GRID_VIEW" });
   };
 
+  // to set the list view
+  const setListView = () => {
+    return dispatch({ type: "SET_LIST_VIEW" });
+  };
+
+  // sorting function
+  const sorting = () => {
+    dispatch({ type: "GET_SORT_VALUE" });
+  };
+
+  // to sort the products in dropdown
+  useEffect(() => {
+    dispatch({ type: "SORTING_PRODUCTS", payload: products });
+  }, [state.sorting_value, products]);
+
   useEffect(() => {
     dispatch({ type: "LOAD_FILTER_PRODUCTS", payload: products });
   }, [products]);
