@@ -29,8 +29,12 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Thapa Technical</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <h3>Fork Technologies</h3>
+              <h3>Address :</h3>
+              <p>
+                20th, First Floor.21, 17th Cross, Main, MC Road, Near City Union Bank &, 
+                Catholic Syrian Bank, Vijayanagar, Bengaluru, Karnataka-560040.
+              </p>
             </div>
             <div className="footer-subscribe">
               <h3>Subscribe to get important updates</h3>
@@ -58,7 +62,7 @@ const Footer = () => {
             </div>
             <div className="footer-contact">
               <h3>Call Us</h3>
-              <h3>+91 12345678978</h3>
+              <h3>+91 9730 544 522</h3>
             </div>
           </div>
 
@@ -66,7 +70,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+                @{new Date().getFullYear()} Fork Technologies. All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
